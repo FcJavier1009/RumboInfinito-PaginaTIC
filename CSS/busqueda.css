@@ -25,6 +25,7 @@ body {
 .caja img {
     width: 400px;
     height: auto;
+    align: center;
 }
 .caja h1 {
     font-size: 50px;
