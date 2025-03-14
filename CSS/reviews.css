@@ -43,18 +43,3 @@ img {
     border: 1px solid black;
     padding: 10px;
 }
-a {
-    color: #3366cc;
-    text-decoration: none;
-}
-a:visited {
-    color: #8B0000;
-}
-a:hover {
-    color: #DAA520;
-    text-decoration: underline;
-}
-a:active {
-    color: #006400;
-}
-
