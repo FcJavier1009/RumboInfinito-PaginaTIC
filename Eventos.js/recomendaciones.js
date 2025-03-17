@@ -20,3 +20,15 @@ document.querySelector('#opiniones').addEventListener('click', function(){
 document.querySelector('#inicio').addEventListener('click', function(){
     window.location.replace("../index.html");
 });
+const botones = document.querySelectorAll("input");
+botones.forEach(input => {
+    input.addEventListener("mouseover", function () {
+        this.style.transform = "scale(1.2)";
+        this.style.transition = "transform 0.3s ease";
+        this.style.backgroundColor = "#cd9857";
+    });
+    input.addEventListener("mouseout", function () {
+        this.style.transform = "scale(1)";
+        this.style.backgroundColor =  "#f4ddb1" ;
+    });
+});
