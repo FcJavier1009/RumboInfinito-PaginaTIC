@@ -13,9 +13,11 @@ botones.forEach(input => {
     input.addEventListener("mouseover", function () {
         this.style.transform = "scale(1.2)";
         this.style.transition = "transform 0.3s ease";
+        this.style.background = 'radial-gradient( #0b224e, #3267a8)';
     });
     input.addEventListener("mouseout", function () {
         this.style.transform = "scale(1)";
+        this.style.background = 'radial-gradient( #f4ddb1 , #cd9857)';
     });
 });
 document.querySelector('#sesion').addEventListener('click', function(){
