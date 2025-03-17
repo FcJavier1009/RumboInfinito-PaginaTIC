@@ -1,7 +1,7 @@
 const images = document.querySelectorAll(".columna img");
 images.forEach(img => {
     img.addEventListener("mouseover", function () {
-        this.style.transform = "scale(1.2)";
+        this.style.transform = "scale(1.1)";
         this.style.transition = "transform 0.3s ease";
     });
     img.addEventListener("mouseout", function () {
