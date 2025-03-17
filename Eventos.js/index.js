@@ -21,3 +21,15 @@ document.querySelector('#claro').addEventListener('click', function(){
 document.querySelector('#oscuro').addEventListener('click', function(){
     document.body.style.background = 'radial-gradient( #0b224e, #3267a8)';
 });
+const botones = document.querySelectorAll("input");
+botones.forEach(input => {
+    input.addEventListener("mouseover", function () {
+        this.style.transform = "scale(1.2)";
+        this.style.transition = "transform 0.3s ease";
+        this.style.backgroundColor = "#cd9857";
+    });
+    input.addEventListener("mouseout", function () {
+        this.style.transform = "scale(1)";
+        this.style.backgroundColor =  "#f4ddb1" ;
+    });
+});
