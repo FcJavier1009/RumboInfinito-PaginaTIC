@@ -8,6 +8,16 @@ images.forEach(img => {
         this.style.transform = "scale(1)";
     });
 });
+const botones = document.querySelectorAll("input");
+botones.forEach(input => {
+    input.addEventListener("mouseover", function () {
+        this.style.transform = "scale(1.2)";
+        this.style.transition = "transform 0.3s ease";
+    });
+    input.addEventListener("mouseout", function () {
+        this.style.transform = "scale(1)";
+    });
+});
 document.querySelector('#sesion').addEventListener('click', function(){
     window.location.replace("../HTML/inicio_sesion.html");
 });
